@@ -1,0 +1,63 @@
+header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; 
+    overflow: hidden;
+    background: #b5b2e2;
+}
+header h1 {
+    color: #454274;
+    padding-left: 40px;
+    padding-top: 9px;
+}
+.logo {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    height: 80px;
+}
+nav {
+    font-size: larger;
+    color: #b5b2e2;
+    padding-left: 40px;
+    position: absolute; 
+    top: 100px; 
+    left: 0; 
+    bottom: 0;
+    width: 200px;
+    overflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
+    background: #454274; 
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul a {
+    color: #b5b2e2;
+    text-decoration: none;
+}
+nav ul li {
+    margin-bottom: 10px;
+}
+nav ul a:active {
+    color: #ffd862;
+}
+main {
+    position: fixed;
+    top: 100px; /* Set this to the height of the header */
+    left: 230px; 
+    right: 0;
+    bottom: 0;
+    overflow: auto; 
+    background: #fff;
+}
+iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+}

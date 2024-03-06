@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<title>Brigitta Ambur</title>
+	</head>
+
+<style>
+    body {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    form {
+        margin-left: -50px;
+        margin-right: -50px;
+        margin-bottom: -20px;
+        background-color: #FFB6C1;
+        padding: 20px 30px;
+        text-align: center;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    .info {
+        background-color:rgb(179, 249, 230);
+        padding: 20px 50px;
+        text-align: left;
+    }
+    .lugemus {
+        background-color:rgb(243, 240, 147);
+        padding: 20px 50px;
+        text-align: left;
+    }
+    .pealkiri {
+        font-size: large;
+        font-weight:bold;
+    }
+    input {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 5px;
+        margin-bottom: 15px;
+        margin-left: 20px;
+    }
+    select {
+        padding: 5px;
+        margin-left: 20px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    textarea {
+        padding: 10px;
+        margin-left: 20px;
+    }
+    .poordumine {
+        padding: 10px 70px;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    input[type=submit], input[type=reset] {
+        background-color: rgb(179, 249, 230);
+        margin: 40px;
+        padding: 10px 40px;
+        font-size: larger;
+    }
+</style>
+
+<body>
+    <form action="mailto:brigitta.ambur@ut.ee" method="post" enctype="text/plain">
+		<h2>Loodus- ja täppisteaduste valdkonna bakalaureuseõppe tudengite lugemisharjumused</h2>
+			<p class="poordumine">Antud küsitlus on loodud uurimaks loodus- ja täppisteaduste valdkonna bakalaureuseõppe tudengite lugemisharjumusi. Täpsemalt soovitakse teada, kui palju antud valdkonna tudengite seas lugemist harrastatakse, millised žanrid on populaarsemad ning kuidas vanus, sugu või eriala tulemusi mõjutada võiksid. Kogutud andmeid kasutatakse vaid käesoleva uurimuse tarvis ning ei jagata kolmandate osapooltega. <br> Tärniga (*) tähistatud küsimustele on kohustuslik vastata. <br><strong>Tänan, et leiate aega vastata!</strong></p>
+
+		<div class="info">	
+			<h2 style="text-align: center; padding-bottom: 20px;">Täitja informatsioon</h2>
+
+			<p class="pealkiri"><label for="nimi">Nimi</label></p>
+			<input type="text" id="nimi" name="nimi" placeholder="Lisa oma nimi">
+			<br><br>
+		
+			<p class="pealkiri"><label for="eriala">Eriala*</label></p>
+			<select id="eriala" name="eriala" required>
+			<option value="">Eriala</option>
+			<option value="at">Arvutitehnika</option>
+			<option value="bio">Bioloogia ja elustiku kaitse</option>
+			<option value="fkm">Füüsika, keemia ja materjaliteadus</option>
+			<option value="gen">Geenitehnoloogia</option>
+			<option value="geo">Geograafia</option>
+			<option value="geke">Geoloogia ja keskkonnatehnoloogia</option>
+			<option value="it">Informaatika</option>
+			<option value="lote">Loodusteadused ja tehnoloogia </option>
+			<option value="mata">Matemaatika</option>
+			<option value="matstat">Matemaatiline statistika</option>
+			</select>
+			<br><br>
+			
+			<p class="pealkiri"><label>Sugu*</label></p>
+			<input type="radio" id="mees" name="sugu" value="Mees" required>
+			<label for="mees">Mees</label><br>
+			<input type="radio" id="naine" name="sugu" value="Naine">
+			<label for="naine">Naine</label><br>
+			<input type="radio" id="trans" name="sugu" value="Transsooline">
+			<label for="trans">Transsooline</label><br>
+			<input type="radio" id="muu" name="sugu" value="Midagi muud">
+			<label for="muu">Midagi muud</label><br>
+			<input type="radio" id="ei" name="sugu" value="Ei soovi avaldada">
+			<label for="ei">Ei soovi avaldada</label>
+			<br><br>
+
+			<p class="pealkiri"><label for="vanus">Vanus*</label></p>
+			<select id="vanus" name="vanus" required>
+			<option value="">Vali</option>
+			<option value="-17">...-17</option>
+			<option value="18-21">18-21</option>
+			<option value="22-25">22-25</option>
+			<option value="26-29">26-29</option>
+			<option value="30+">30-...</option>
+			</select>
+			<br><br>
+			
+			<p class="pealkiri"><label for="haridus">Haridustase*</label></p>
+			<select id="haridus" name="haridus" size="4" required>
+			<option value="kesk">Keskharidus</option>
+			<option value="kutsekesk">Kutsekeskharidus</option>
+			<option value="baka">Bakalaureus</option>
+			<option value="maka">Magister</option>
+			<option value="dok">Doktor</option>
+			</select>
+			<br><br>
+		</div>
+
+		<div class="lugemus">
+			<h2 style="text-align: center; padding-bottom: 20px;">Lugemisharjumused</h2>
+			
+			<p class="pealkiri"><label for="meeldib">Kui väga meeldib Sulle lugeda?*</label></p>
+			<input type="radio" id="vihkan" name="meeldib" value="vihkan" required>
+			<label for="vihkan">Vabatahtlikult mind lugemast ei leia</label><br>
+			<input type="radio" id="väldin" name="meeldib" value="väldin">
+			<label for="väldin">Oskan lugeda, kuid pigem eelistan muid tegevusi</label><br>
+			<input type="radio" id="talun" name="meeldib" value="talun">
+			<label for="talun">Mulle meeldib lugeda vaid teatud kirjandust</label><br>
+			<input type="radio" id="loen" name="meeldib" value="loen">
+			<label for="loen">Lugemine meeldib mulle ja teen seda tihti</label><br>
+			<input type="radio" id="armastan" name="meeldib" value="armastan">
+			<label for="armastan">Armastan lugemist ja teen seda igal vabal hetkel</label>
+			<br><br>
+			
+			<p class="pealkiri"><label for="loed_pigem">Kumba loed rohkem, kas Eesti või tõlkekirjandust?*</label></p>
+			<input type="radio" id="eesti" name="loed_pigem" value="eesti" required>
+			<label for="eesti">Eesti kirjandust</label>
+			<input type="radio" id="tõlke" name="loed_pigem" value="tõlke">
+			<label for="tõlke">Tõlkekirjandust</label>
+			<input type="radio" id="eiloe" name="loed_pigem" value="eiloe">
+			<label for="eiloe">Ma ei loe</label>
+			<br><br>
+			
+			<p class="pealkiri"><label for="keel">Mis keeles Sa peamiselt loed?*<br>(Kui Sa ei harrasta lugemist, vali neist kõige tõenäolisem)</label></p>
+			<select id="keel" name="keel" required>
+			<option value="">Vali keel</option>
+			<option value="inglise">Inglise</option>
+			<option value="eesti">Eesti</option>
+			<option value="vene">Vene</option>
+			<option value="muu_keel">Muu</option>
+			</select>
+			<br><br>
+
+			<p class="pealkiri"><label>Milliseid žanreid eelistad lugeda?<br>(Kui Sa ei harrasta lugemist, jäta vastamata)</label></p>
+			<input type="checkbox" id="ajalugu" name="kirj" value="ajalugu">
+			<label for="ajalugu">Ajalooline</label><br>	
+			<input type="checkbox" id="armastus" name="kirj" value="armastus">
+			<label for="armastus">Armastusromaan</label><br>		
+			<input type="checkbox" id="biograafia" name="kirj" value="biograafia">
+			<label for="biograafia">Biograafia ja memuaarid</label><br>	
+			<input type="checkbox" id="fantaasia" name="kirj" value="fantaasia">
+			<label for="fantaasia">Fantaasia</label><br>
+			<input type="checkbox" id="krimka" name="kirj" value="krimka">
+			<label for="krimka">Krimi</label><br>
+			<input type="checkbox" id="kjam" name="kirj" value="kjam">
+			<label for="kjam">Koomiksid ja mangad</label><br>
+			<input type="checkbox" id="laste" name="kirj" value="laste">
+			<label for="laste">Lastekirjandus</label><br>
+			<input type="checkbox" id="luule" name="kirj" value="luule">
+			<label for="luule">Luule</label><br>
+			<input type="checkbox" id="noorte" name="kirj" value="noorte">
+			<label for="noorte">Noortekirjandus</label><br>
+			<input type="checkbox" id="näite" name="kirj" value="näite">
+			<label for="näite">Näitekirjandus</label><br>
+			<input type="checkbox" id="põnevik" name="kirj" value="põnevik">
+			<label for="põnevik">Põnevik</label><br>
+			<input type="checkbox" id="reisi" name="kirj" value="reisi">
+			<label for="reisi">Reisikiri</label><br>
+			<input type="checkbox" id="teabe" name="kirj" value="teabe">
+			<label for="teabe">Teabekirjandus</label><br>
+			<input type="checkbox" id="ulme" name="kirj" value="ulme">
+			<label for="ulme">Ulme</label><br>
+			<input type="checkbox" id="õudukas" name="kirj" value="õudukas">
+			<label for="õudukas">Õuduskirjandus</label><br>
+			
+			<input type="checkbox" id="muukirj" name="kirj" value="muukirj">
+			<label for="muukirj">Muu:</label>
+			<input type="text" id="muukirjandus" name="muukirj" aria-label="Other interest">
+			<br><br>
+
+			<p class="pealkiri"><label for="tekstikast">Mis on su lemmikraamat/lemmikraamatud?<br>(Kui Sa ei harrasta lugemist või Sul ei leidu lemmikut, jäta vastamata)</label></p>
+			<textarea id="tekstikast" name="kysimus" rows="10" cols="30" placeholder="Kirjelda paari lausega"></textarea>
+			<br><br>
+		</div>
+
+		<div class="nupud">
+			<input type="submit" value="Saata">
+			<input type="reset" value="Tühista">
+		</div>
+		
+	</form>
+</body>
